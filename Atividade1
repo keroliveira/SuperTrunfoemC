@@ -1,0 +1,95 @@
+#include <stdio.h>
+
+int main(){
+
+    char estado1 [50];
+    char estado2 [50];
+    
+    char codigocarta1;
+    char codigocarta2; 
+    
+    char nomedacidade1 [50];
+    char nomedacidade2 [50];
+
+    int populacao1;
+    int populacao2;
+
+    float area1;
+    float area2;
+
+    float pib1;
+    float pib2;
+
+    int pontosturisticos1;
+    int pontosturisticos2;
+
+    /* Breve apresentação */
+
+    printf("Olá, usuário! Vamos dar início ao nosso jogo? Você precisará incluir dados referentes a duas cidades de dois diferentes estados.\n"); 
+
+    /* Cadastro da primeira cidade */
+
+    printf("Primeiro, insira um estado do Brasil (nome sem espaço):\n");
+    scanf("%s", &estado1);
+    
+    printf("Agora, escolha uma cidade (nome sem espaço):\n");
+    scanf("%s", &nomedacidade1);
+    
+    printf("Vamos continuar! Agora, informe a população dessa cidade (apenas números):\n" );
+    scanf("%d", &populacao1);
+
+    printf("Informe a sua área (apenas um caractere após o ponto):\n");
+    scanf("%f", &area1);
+
+    printf("Informe também seu PIB (apenas um caractere após o ponto):\n");
+    scanf("%f", &pib1);
+
+    printf("Estamos quase lá! Por fim, insira a quantidade de pontos turísticos da cidade escolhida:\n");
+    scanf("%d", &pontosturisticos1);
+    
+    printf("Finalizamos nosso primeiro cadastro de cidade!\n");
+
+    /* Revisão primeiro card */
+    
+    printf("Confira agora seu primeiro card!\n");
+    printf("Estado:%s\n", estado1);
+    printf("Cidade: %s\n", nomedacidade1);
+    printf("População: %d\n", populacao1);
+    printf("Area: %f\n", area1);
+    printf("PIB: %f\n", pib1);
+    printf("Pontos Turísticos: %d\n", pontosturisticos1);
+
+    /* Cadastro da segunda cidade */
+   
+    printf("Insira um estado do Brasil (nome sem espaço):\n");
+    scanf("%s", &estado2);
+
+    printf("Agora, escolha outra cidade (nome sem espaço):\n");
+    scanf("%s", &nomedacidade2);
+
+    printf("Vamos continuar! Agora, informe a população dessa cidade (apenas números):\n");
+    scanf("%d", &populacao2);
+
+    printf("Informe a sua área (apenas um caractere após o ponto):\n");
+    scanf("%f", &area2);
+
+    printf("Informe também seu PIB (apenas um caractere após o ponto):\n");
+    scanf("%f", &pib2);
+
+    printf("Estamos quase lá! Por fim, insira a quantidade de pontos turísticos da cidade escolhida:\n");
+    scanf("%d", &pontosturisticos2);
+ 
+    /* Revisão segundo card */
+
+    printf("Confira agora seu segundo card!");
+    printf("Segundo Card:\n");
+    printf("Estado: %s\n", estado2);
+    printf("Cidade: %s\n", nomedacidade2);
+    printf("População: %d\n", populacao2);
+    printf("Area: %f\n", area2);
+    printf("PIB: %f\n", pib2);
+    printf("Pontos Turísticos: %d\n", pontosturisticos2);
+
+    return 0;
+    
+}
